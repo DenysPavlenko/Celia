@@ -1,0 +1,80 @@
+extends layouts/main
+
+block variables
+	- var title = 'Gallery album'
+
+block content
+
+	//- Page name
+	.page-name.pt-xl-160.pb-4
+		.container
+			.row.justify-content-center.align-items-center
+				.col-xl-5.col-6
+					span.page-name__title.text-muted Gallery album
+				.col-xl-5.col-6
+					.page-name__line
+
+	.gallery.gallery-album.pb-5
+		.container
+			.row.justify-content-center
+				.col-xl-10
+					ul.gallery-album__nav.filter-nav.pb-5
+						li.h4.filter-nav__link.filter-nav__link--is-active(data-filter-name="all") All
+						li.h4.filter-nav__link(data-filter-name="design") Design
+						li.h4.filter-nav__link(data-filter-name="branding") Branding
+						li.h4.filter-nav__link(data-filter-name="app") App
+		.container
+			//- Row
+			.row.justify-content-center.gallery-album__row
+				//- Image
+				.col-lg-6.col-xl-5.gallery-album__item(data-groups='["branding"]')
+					.gallery-album__image
+						a(href="./article-01.html" class="image-link")
+							.image-link__wrap
+								figure(style="background-image:url(./images/gallery-album/image-1.jpg);" class="image--figure")
+							.image-link__title
+								h5.animated-letters.animated-letters--lfb Go to article
+				//- Image
+				.col-lg-6.col-xl-5.gallery-album__item(data-groups='["app"]')
+					.gallery-album__image.gallery-album__image--small
+						a(href="./article-01.html" class="image-link")
+							.image-link__wrap
+								figure(style="background-image:url(./images/gallery-album/image-2.jpg);" class="image--figure")
+							.image-link__title
+								h5.animated-letters.animated-letters--lfb Go to article
+				//- Image
+				.col-lg-6.col-xl-5.gallery-album__item(data-groups='["design"]')
+					.gallery-album__image.gallery-album__image--small
+						a(href="./article-01.html" class="image-link")
+							.image-link__wrap
+								figure(style="background-image:url(./images/gallery-album/image-3.jpg);" class="image--figure")
+							.image-link__title
+								h5.animated-letters.animated-letters--lfb Go to article
+				//- Image
+				.col-lg-6.col-xl-5.gallery-album__item(data-groups='["app"]')
+					.gallery-album__image
+						a(href="./article-01.html" class="image-link")
+							.image-link__wrap
+								figure(style="background-image:url(./images/gallery-album/image-4.jpg);" class="image--figure")
+							.image-link__title
+								h5.animated-letters.animated-letters--lfb Go to article
+				//- Image
+				.col-lg-6.col-xl-5.gallery-album__item(data-groups='["design"]')
+					.gallery-album__image
+						a(href="./article-01.html" class="image-link")
+							.image-link__wrap
+								figure(style="background-image:url(./images/gallery-album/image-5.jpg);" class="image--figure")
+							.image-link__title
+								h5.animated-letters.animated-letters--lfb Go to article
+				//- Image
+				.col-lg-6.col-xl-5.gallery-album__item(data-groups='["branding"]')
+					.gallery-album__image.gallery-album__image--small
+						a(href="./article-01.html" class="image-link")
+							.image-link__wrap
+								figure(style="background-image:url(./images/gallery-album/image-6.jpg);" class="image--figure")
+							.image-link__title
+								h5.animated-letters.animated-letters--lfb Go to article
+				.gallery-album__sizer
+
+	include ./modules/top-arrow
+	include ./sections/footer.pug

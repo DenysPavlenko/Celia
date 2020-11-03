@@ -1,0 +1,41 @@
+/* Slider arrow */
+.slider-arrow
+	position: relative
+	background-color: $button-color
+	width: 80px
+	height: 80px
+	border-radius: 50%
+	z-index: 1
+	overflow: hidden
+	display: flex
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	&:after
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		opacity: 0
+		width: 100%
+		height: 100%
+		background: $button-hover-color
+		transition: 0.3s $timing-function
+		z-index: -1
+	&:hover
+		&:after
+			opacity: 1
+	i.fa
+		margin-top: -2px
+		font-size: rem(22px)
+		line-height: rem(22px)
+
++media-max($breakpoint-sm)
+	/* Slider arrow */
+	.slider-arrow
+		width: 60px
+		height: 60px
+		i.fa
+			margin-top: 0
+			font-size: rem(17px)
+			line-height: rem(17px)

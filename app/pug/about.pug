@@ -1,0 +1,181 @@
+extends layouts/main
+
+block variables
+	- var title = 'About'
+
+block content
+
+	//- Page name
+	.page-name.pt-xl-160.pb-4
+		.container
+			.row.justify-content-center.align-items-center
+				.col-6.col-xl-5
+					span.page-name__title.text-muted About
+				.col-6.col-xl-5
+					.page-name__line
+
+	header.banner(style="background-image: url('./images/about/background-image.jpg')" data-skin="dark")
+		.container
+			.row.justify-content-center
+				.col-12.col-xl-10
+					.banner__title
+						h1.text-light.animated-letters.animated-letters--lfr(data-scroll-animation="animated-letters--lfr-active") City. Groningen
+
+	section.pt-5.pb-5
+		.container
+			.row.justify-content-center
+				.col-xl-10
+					h2.mb-4 <span class="h2-char text-muted">a.</span>Hercules Florence. A French painter
+					p.text-bold.mb-3 Several people may have coined the same new term from these roots independently. Hercules Florence, a French painter and inventor living in Campinas, Brazil, used the French form of the word, photographie, in private notes which a Brazilian historian believes were written in 1834.
+					p Several people may have coined the same new term from these roots independently. Hercules Florence, a French painter and inventor living in Campinas, Brazil, used the French form of the word, photographie, in private notes which a Brazilian historian believes were written in 1834.
+
+	section.pb-5
+		.container
+			.row.justify-content-center
+				.col-xl-10
+					h2.mb-4 <span class="h2-char text-muted">b.</span>Precursor. Technologies
+				.mb-4.col-lg-6.pr-lg-4.mb-lg-0.col-xl-5
+					p Photography is the result of combining several technical discoveries, relating to seeing an image and capturing the image. <br><br>The discovery of the camera obscura ("dark chamber" in Latin) that provides an image of a scene dates back to ancient China. Greek mathematicians Aristotle and Euclid independently described a pinhole camera in the 5th and 4th centuries. Photography is the result of combining several technical discoveries, relating to seeing an image and capturing the image. <br><br>Photography is the result of the camera obscura that provides an image of a scene dates back to China.
+				.col-lg-6.col-xl-5
+					.d-flex.align-items-start.align-md-items-center.flex-column.flex-sm-row.mb-4.pl-lg-4
+						img(src="./images/about/icon-1.png", class="pr-2 mb-3 mb-md-0" alt="icon")
+						p Leonardo da Vinci mentions natural camera obscura that are formed by.
+					.d-flex.align-items-start.align-md-items-center.flex-column.flex-sm-row.mb-4.pl-lg-4
+						img(src="./images/about/icon-2.png", class="pr-2 mb-3 mb-md-0" alt="icon")
+						p A hole in the cave wall will act as a pinhole camera and project a laterally.
+					.d-flex.align-items-start.align-md-items-center.flex-column.flex-sm-row.mb-4.pl-lg-4
+						img(src="./images/about/icon-3.png", class="pr-2 mb-3 mb-md-0" alt="icon")
+						p Renaissance painters used the camera obscura which, in fact, gives the optical.
+					.d-flex.align-items-start.align-md-items-center.flex-column.flex-sm-row.pl-lg-4
+						img(src="./images/about/icon-4.png", class="pr-2 mb-3 mb-md-0" alt="icon")
+						p It is a box with a hole in it which allows light to go through and create an.
+
+	section.bg-dark.pt-5.pb-1(data-skin="dark")
+		.container
+			.row.justify-content-center
+				.col-xl-10
+					h2.mb-4.text-light Our team
+				.mb-4.col-md-6.col-xl-3
+					.mb-3.animated-image(data-scroll-animation="revealIn")
+						img(src="./images/about/team-img-1.jpg", class="image" alt="icon")
+					span.text-light.sup-title.mb-3 Developer
+					h3.text-light Carol Montana
+				.mb-4.col-md-6.col-xl-3
+					.mb-3.animated-image(data-scroll-animation="revealIn")
+						img(src="./images/about/team-img-2.jpg", class="image" alt="icon")
+					span.text-light.sup-title.mb-3 designer
+					h3.text-light Kara Jersey
+				.mb-4.col-md-6.col-xl-3
+					.mb-3.animated-image(data-scroll-animation="revealIn")
+						img(src="./images/about/team-img-3.jpg", class="image" alt="icon")
+					span.text-light.sup-title.mb-3 manager
+					h3.text-light Sahara Miami
+				.mb-4.col-md-6.col-xl-3
+					.mb-3.animated-image(data-scroll-animation="revealIn")
+						img(src="./images/about/team-img-4.jpg", class="image" alt="icon")
+					span.text-light.sup-title.mb-3 director
+					h3.text-light Hannah California
+
+
+	section.bg-dark.pt-5.pb-5(data-skin="dark")
+		.container
+			.row.justify-content-center
+				.col-xl-10
+					h2.text-light.mb-4 In numbers
+				.col-lg-12
+					.table
+						.thead.d-none.d-lg-flex
+							.td.col-lg-3.offset-xl-1
+								span.text-light.sup-title city
+							.td.col-lg-3
+								span.text-light.sup-title prefecture
+							.td.col-lg-3
+								span.text-light.sup-title density
+							.td.col-lg-2
+								span.text-light.sup-title founded
+						.tbody.d-flex.flex-wrap
+							.td.col-12.col-lg-3.offset-xl-1(data-title="city")
+								span.h4.tbody-number 1.
+								span.h4.tbody-title.text-light  Nagoya
+							.td.col-12.col-lg-3(data-title="prefecture")
+								span.h4.tbody-title.text-light Alichi
+							.td.col-12.col-lg-3(data-title="density")
+								span.h4.tbody-title.text-light 6,860
+							.td.col-12.col-lg-3.col-xl-2(data-title="founded")
+								span.h4.tbody-title.text-light 1889-10-01
+						.tbody.d-flex.flex-wrap
+							.td.col-12.col-lg-3.offset-xl-1(data-title="city")
+								span.h4.tbody-number 2.
+								span.h4.tbody-title.text-light Kazuno
+							.td.col-12.col-lg-3(data-title="prefecture")
+								span.h4.tbody-title.text-light Akita
+							.td.col-12.col-lg-3(data-title="density")
+								span.h4.tbody-title.text-light 50,2
+							.td.col-12.col-lg-3.col-xl-2(data-title="founded")
+								span.h4.tbody-title.text-light 1972-04-01
+						.tbody.d-flex.flex-wrap
+							.td.col-12.col-lg-3.offset-xl-1(data-title="city")
+								span.h4.tbody-number 3.
+								span.h4.tbody-title.text-light Funabashi
+							.td.col-12.col-lg-3(data-title="prefecture")
+								span.h4.tbody-title.text-light Chiba
+							.td.col-12.col-lg-3(data-title="density")
+								span.h4.tbody-title.text-light 6,851
+							.td.col-12.col-lg-3.col-xl-2(data-title="founded")
+								span.h4.tbody-title.text-light 1937-04-01
+						.tbody.d-flex.flex-wrap
+							.td.col-12.col-lg-3.offset-xl-1(data-title="city")
+								span.h4.tbody-number 4.
+								span.h4.tbody-title.text-light Matsuyama
+							.td.col-12.col-lg-3(data-title="prefecture")
+								span.h4.tbody-title.text-light Ehime
+							.td.col-12.col-lg-3(data-title="density")
+								span.h4.tbody-title.text-light 1,201
+							.td.col-12.col-lg-3.col-xl-2(data-title="founded")
+								span.h4.tbody-title.text-light 1889-12-15
+						.tbody.d-flex.flex-wrap
+							.td.col-12.col-lg-3.offset-xl-1(data-title="city")
+								span.h4.tbody-number 5.
+								span.h4.tbody-title.text-light Kurume
+							.td.col-12.col-lg-3(data-title="prefecture")
+								span.h4.tbody-title.text-light Fukoka
+							.td.col-12.col-lg-3(data-title="density")
+								span.h4.tbody-title.text-light 1,328
+							.td.col-12.col-lg-3.col-xl-2(data-title="founded")
+								span.h4.tbody-title.text-light 1889-04-01
+						.tbody.d-flex.flex-wrap
+							.td.col-12.col-lg-3.offset-xl-1(data-title="city")
+								span.h4.tbody-number 6.
+								span.h4.tbody-title.text-light Fukushima
+							.td.col-12.col-lg-3(data-title="prefecture")
+								span.h4.tbody-title.text-light Fukusima
+							.td.col-12.col-lg-3(data-title="density")
+								span.h4.tbody-title.text-light 388
+							.td.col-12.col-lg-3.col-xl-2(data-title="founded")
+								span.h4.tbody-title.text-light 1907-04-01
+
+	section.pt-5.pb-5
+		.container
+			.row.justify-content-center
+				.col-xl-10
+					h2.mb-4 <span class="h2-char text-muted">c.</span>Fukushima Prefecture
+			.row.justify-content-center.mb-5
+				.order-2.col-lg-6.order-lg-1.col-xl-5
+					h3.mb-3 Part of ancient Mutsu Province
+					p.text-bold.mb-3 The Aizu-Otsuka Kofun within the city borders dates from the 4th century AD
+					p.mb-4 During the Sengoku period and in the Edo period, the area developed as a castle town to Aizu Domain and was the location of the Battle of Aizu, one of the largest conflicts of the Boshin War. After the Meiji Restoration, Wakamatsu Town was created with the establishment.
+					a(href="./project-01.html" class="button") See now
+				.order-1.col-lg-6.order-lg-2.col-xl-5
+					img(src="./images/about/blog-image-1.jpg", class="image pl-lg-4 mb-4 mb-lg-0" alt="icon")
+
+			.row.justify-content-center
+				.order-2.col-lg-6.order-lg-1.col-xl-5
+					h3.mb-3 Hercules Florence
+					p.text-bold.mb-3 Photography is the result of combining several technical discoveries, relating to seeing an image and capturing
+					p.mb-4 The German newspaper Vossische Zeitung of 25 February 1839 contained an article entitled Photographie, discussing several priority claims – especially Henry Fox Talbot's – regarding Daguerre's claim of invention. The article is the earliest known occurrence of the word in public print.
+					a(href="./project-01.html" class="button") See now
+				.order-1.col-lg-6.order-lg-2.col-xl-5
+					img(src="./images/about/blog-image-2.jpg", class="image pl-lg-4 mb-4 mb-lg-0" alt="icon")
+
+	include ./modules/top-arrow
+	include ./sections/footer.pug

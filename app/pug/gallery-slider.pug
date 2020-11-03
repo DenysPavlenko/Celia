@@ -1,0 +1,66 @@
+extends layouts/main
+
+block variables
+	- var title = 'Gallery slider'
+
+block content
+
+	//- Page name
+	.page-name.pt-xl-160.pb-4
+		.container
+			.row.justify-content-center.align-items-center
+				.col-xl-5.col-6
+					span.page-name__title.text-muted Gallery slider
+				.col-xl-5.col-6
+					.page-name__line
+
+	//- Gallery slider
+	.gallery-slider.pb-5
+		.container
+			.row.justify-content-center
+				//- Left slider
+				.col-lg-6.col-xl-5.mb-4.mb-lg-0
+					.gallery-slider__left.swiper-container.mr-lg-4
+						.gallery-slider__wrapper.swiper-wrapper
+							.gallery-slider__slide.swiper-slide
+								a(href="./article-01.html" class="gallery-slider__image")
+									figure(style="background-image:url(./images/gallery-slider/slide-left-1.jpg);" class="image--figure")
+							.gallery-slider__slide.swiper-slide
+								a(href="./article-01.html" class="gallery-slider__image")
+									figure(style="background-image:url(./images/gallery-slider/slide-left-2.jpg);" class="image--figure")
+							.gallery-slider__slide.swiper-slide
+								a(href="./article-01.html" class="gallery-slider__image")
+									figure(style="background-image:url(./images/gallery-slider/slide-left-3.jpg);" class="image--figure")
+
+				//- Right slider
+				.col-lg-6.col-xl-5
+					.gallery-slider__right.swiper-container.ml-lg-4
+						.gallery-slider__wrapper.swiper-wrapper.mb-4
+							.gallery-slider__slide.swiper-slide
+								h5.text-bold.mb-4.animated-letters.animated-letters--lfr Wedding
+								a(href="./article-01.html" class="gallery-slider__image image-link")
+									.image-link__wrap
+										figure(style="background-image:url(./images/gallery-slider/slide-right-1.jpg);" class="image--figure")
+									.image-link__title
+										h5.animated-letters.animated-letters--lfb Go to article
+							.gallery-slider__slide.swiper-slide
+								h5.text-bold.mb-4.animated-letters.animated-letters--lfr Recreation
+								a(href="./article-01.html" class="gallery-slider__image image-link")
+									.image-link__wrap
+										figure(style="background-image:url(./images/gallery-slider/slide-right-2.jpg);" class="image--figure")
+									.image-link__title
+										h5.animated-letters.animated-letters--lfb Go to article
+							.gallery-slider__slide.swiper-slide
+								h5.text-bold.mb-4.animated-letters.animated-letters--lfr Mountains
+								a(href="./article-01.html" class="gallery-slider__image image-link")
+									.image-link__wrap
+										figure(style="background-image:url(./images/gallery-slider/slide-right-3.jpg);" class="image--figure")
+									.image-link__title
+										h5.animated-letters.animated-letters--lfb Go to article
+
+						.gallery-slider__nav
+							.arrow.arrow--next.link-animation
+								h3.link-animation__hidden.text-dark
+									| Next Project <i class="fa fa-chevron-right"></i>
+								h3.link-animation__text.text-muted
+									| Next Project <i class="fa fa-chevron-right"></i>

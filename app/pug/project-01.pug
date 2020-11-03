@@ -1,0 +1,96 @@
+extends layouts/main
+
+block variables
+	- var title = 'Project'
+
+block content
+
+	//- Page name
+	.page-name.pt-xl-160.pb-4
+		.container
+			.row.justify-content-center.align-items-center
+				.col-6.col-xl-5
+					span.page-name__title.text-muted Project
+				.col-6.col-xl-5
+					.page-name__line
+
+	header
+		.container
+			.row.justify-content-center
+				.col-xl-10
+					h1.mb-4.animated-letters.animated-letters--lfr(data-scroll-animation="animated-letters--lfr-active") City. Groningens
+					p.mb-5.p-header.animated(data-scroll-animation="fadeInUp" data-scroll-animation-delay="0.2s") Photography is the art, application and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film. It is employed in many fields of science.
+
+	.project-banner
+		.container
+			.row.justify-content-center.animated(data-scroll-animation="fadeIn" data-scroll-animation-delay="0.4s")
+				.d-flex.flex-wrap.justify-content-between.col-xl-10
+					.mb-4.pr-2
+						span.sup-title.mb-3 name
+						h3 Black-and-white
+					.mb-4.pr-2
+						span.sup-title.mb-3 year
+						h3 2020
+					.mb-4.pr-2
+						span.sup-title.mb-3 city
+						h3 Kyoto Prefecture
+			.row
+				.col-12
+					.animated-image(data-scroll-animation="revealIn")
+						img(src="./images/project/project-banner-1.jpg", class="image" alt="banner")
+
+	section.pt-5.pb-5
+		.container
+			.row.justify-content-center
+				.col-xl-10
+					h2.mb-4 <span class="h2-char text-muted">a.</span>Hercules Florence. A French painter
+					p.mb-3.text-bold Several people may have coined the same new term from these roots independently. Hercules Florence, a French painter and inventor living in Campinas, Brazil, used the French form of the word, photographie, in private notes which a Brazilian historian believes were written in 1834.
+					p Several people may have coined the same new term from these roots independently. Hercules Florence, a French painter and inventor living in Campinas, Brazil, used the French form of the word, photographie, in private notes which a Brazilian historian believes were written in 1834.
+
+	.project-banner-fluid(data-skin="dark")
+		.animated-image(data-scroll-animation="revealIn")
+			img(src="./images/project/project-banner-2.jpg", class="image" alt="banner")
+
+	section.bg-dark.pt-5(data-skin="dark")
+		.project-slider.image-half.image-half--right
+			.container
+				.row
+					.col-lg-12.col-xl-5.offset-xl-1
+						h2.mb-4.text-light <span class="h2-char text-muted">b.</span>Precursor. Technologies
+						p.mb-3.text-bold.text-light Photography is the result of combining several technical discoveries, relating to seeing an image and capturing the image. The discovery of the camera obscura ("dark chamber" in Latin) that provides an image of a scene dates back to ancient China. Greek mathematicians Aristotle and Euclid independently described a pinhole camera in the 5th and 4th centuries.
+						p.mb-5.mb-xl-4.text-light Leonardo da Vinci mentions natural camera obscura that are formed by dark caves on the edge of a sunlit valley. A hole in the cave wall will act as a pinhole camera and project a laterally reversed, upside down image on a piece of paper. Renaissance painters used the camera obscura which, in fact, gives the optical rendering in color that dominates Western Art. It is a box with a hole in it which allows light to go through and create an image onto the piece of paper.
+						.project-slider__arrows.d-flex.justify-content-end
+							.slider-arrow.project-slider__arrow-left.mr-3
+								i.fa.fa-chevron-down.text-light
+							.slider-arrow.project-slider__arrow-right
+								i.fa.fa-chevron-up.text-light
+
+			.project-slider__container.image-half__wrapper.swiper-container
+				.project-slider__wrapper.swiper-wrapper
+					.project-slide.swiper-slide
+						figure(class="project-slide__image image--figure" style="background-image:url(./images/project/slider/slide-1.jpg)")
+					.project-slide.swiper-slide
+						figure(class="project-slide__image image--figure" style="background-image:url(./images/project/slider/slide-2.jpg)")
+					.project-slide.swiper-slide
+						figure(class="project-slide__image image--figure" style="background-image:url(./images/project/slider/slide-3.jpg)")
+
+	section.bg-dark.project-slider.pt-5.pb-4(data-skin="dark")
+		.container
+			.row.justify-content-center
+				.col-xl-10
+					h2.mb-4.text-light <span class="h2-char text-muted">c.</span>Invention
+
+			.row.justify-content-center
+				.col-lg-6.col-xl-5
+					p.text-light.mb-4 The first permanent photoetching was an image produced in 1822 by the French inventor Nicéphore Niépce, but it was destroyed in a later attempt to make prints from it. Niépce was successful again in 1825. In 1826 or 1827, he made the View from the Window at Le Gras, the earliest surviving photograph from nature, of the image of a real-world scene, as formed in a camera obscura by a lens. Because Niépce's camera photographs required an extremely long exposure.
+				.col-lg-6.col-xl-5
+					.pl-lg-4
+						.mb-4
+							span.sup-title.text-light.mb-3 In Brazil
+							h3.text-light Hercules Florence
+						.mb-4
+							span.text-light.sup-title.mb-3 later naming
+							h3.text-light Photographie
+
+	include ./modules/top-arrow
+	include ./sections/footer-nav.pug

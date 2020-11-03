@@ -1,0 +1,86 @@
+extends layouts/main
+
+block variables
+	- var title = 'Home page slides'
+
+block content
+
+	.home-slides#homeSlides
+		//- Header
+		header.home-slide.home-slide--header.image--background(style="background-image: url(./images/home-slider/header-bg.png)")
+			.container.animated(data-afterload-animation="fadeIn")
+				.row.justify-content-center.align-items-center
+					.col-lg-6.col-xl-5.mb-4.mb-lg-0
+						.logo.logo--header
+							img(src="./images/logo.svg", alt="logo")
+					.col-lg-6.col-xl-5
+						h1 Portfolio for designer / artist / agencies / photog&shy;rapher / etc
+
+		//- Article
+		article.home-slide
+			.container.pt-5.pb-5
+				.row.align-items-center
+					.col-lg-6.col-xl-5.offset-xl-1
+						.home-slide__article-image.mb-4.mb-lg-0.animated-image.animated-image--dark(data-slide-animation="revealIn")
+							figure(style="background-image:url(./images/home-slider/slide-1-img.jpg);" class="image--figure")
+					.col-lg-6.col-xl-4.offset-xl-1
+						span.sup-title.mb-3.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.2s") City
+						span.h1.d-inline-block.mb-4.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.4s") Cities of Japan
+						h3.mb-3.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.5s") Kyoto Prefecture
+						h3.mb-3.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.6s") Tokyo
+						h3.mb-4.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.7s") My love japan
+						a(href="./project-01.html" class="button animated" data-slide-animation="fadeInUp" data-slide-animation-delay="0.8s") see now
+
+		//- Article
+		article.home-slide
+			.container.pt-5.pb-5
+				.row.align-items-center
+					.col-lg-6.col-xl-5.offset-xl-1
+						.home-slide__article-image.mb-4.mb-lg-0.animated-image.animated-image--dark(data-slide-animation="revealIn")
+							figure(style="background-image:url(./images/home-slider/slide-2-img.jpg);" class="image--figure")
+					.col-lg-6.col-xl-4.offset-xl-1
+						span.sup-title.mb-3.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.2s") City
+						span.h1.d-inline-block.mb-4.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.4s") In the Netherlands
+						h3.mb-3.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.5s") Groningen
+						h3.mb-3.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.6s") Amsterdam
+						h3.mb-3.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.7s") The Hague
+						h3.mb-4.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.8s") Roterdam
+						a(href="./project-01.html" class="button animated" data-slide-animation="fadeInUp" data-slide-animation-delay="0.9s") see now
+
+		//- Article
+		article.home-slide
+			.container.pt-5.pb-5
+				.row.align-items-center
+					.col-lg-6.col-xl-5.offset-xl-1
+						.home-slide__article-image.mb-4.mb-lg-0.animated-image.animated-image--dark(data-slide-animation="revealIn")
+							figure(style="background-image:url(./images/home-slider/slide-3-img.jpg);" class="image--figure")
+					.col-lg-6.col-xl-4.offset-xl-1
+						span.sup-title.mb-3.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.2s") City
+						span.h1.d-inline-block.mb-4.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.4s") In Australia
+						h3.mb-3.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.5s") Brisbane
+						h3.mb-3.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.6s") Clifton
+						h3.mb-3.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.7s") Melbourne
+						h3.mb-4.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.8s") Milson Point
+						a(href="./project-01.html" class="button animated" data-slide-animation="fadeInUp" data-slide-animation-delay="0.9s") see now
+
+		//- Article
+		article.home-slide
+			.container.pt-5.pb-5
+				.row.align-items-center
+					.col-lg-6.col-xl-5.offset-xl-1
+						.home-slide__article-image.mb-4.mb-lg-0.animated-image.animated-image--dark(data-slide-animation="revealIn")
+							figure(style="background-image:url(./images/home-slider/slide-4-img.jpg);" class="image--figure")
+					.col-lg-6.col-xl-4.offset-xl-1
+						span.sup-title.mb-3.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.2s") City
+						span.h1.d-inline-block.mb-4.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.4s") In Ukraine
+						h3.mb-3.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.5s") Kyiv
+						h3.mb-3.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.6s") Lviv
+						h3.mb-3.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.7s") Yaremche
+						h3.mb-4.animated(data-slide-animation="fadeInUp" data-slide-animation-delay="0.8s") Odesa
+						a(href="./project-01.html" class="button animated" data-slide-animation="fadeInUp" data-slide-animation-delay="0.9s") see now
+
+	//- Slides counter
+	.home-slides-counter.animated(data-afterload-animation="fadeInUp")
+		span.p-header.home-slides-counter__count
+		.home-slides-counter__progress
+			.home-slides-counter__progress-bar

@@ -1,0 +1,16 @@
+/* Filter nav */
+.filter-nav
+	display: flex
+	flex-wrap: wrap
+	&__link
+		margin-right: 10px
+		color: $text-muted
+		transition: 0.3s
+		cursor: pointer
+		margin-bottom: 10px
+		&:not(:last-child)
+			margin-right: 50px
+		&:hover
+			color: $text-dark
+		&--is-active
+			color: $text-dark

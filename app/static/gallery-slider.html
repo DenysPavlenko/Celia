@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Gallery slider</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./images/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-touch-icon-114x114.png">
+  <link rel="stylesheet" type="text/css" href="./styles/vendor.css">
+  <link rel="stylesheet" type="text/css" href="./styles/main.css">
+</head>
+
+<body class="loaded">
+  <!-- Preloader-->
+  <div class="preloader">
+    <div class="preloader__overlay-one"></div>
+    <div class="preloader__overlay-two"></div>
+    <div class="preloader__logo logo logo--preloader"><img src="./images/logo.svg" alt="logo"></div>
+  </div>
+  <navigation class="navigation">
+    <div class="navigation-header animated" data-scroll-animation="fadeInDown"><a class="navigation-header__logo" href="./index.html">
+        <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
+      </a>
+      <div class="navigation-header__burger">
+        <div class="burger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+    <div class="navigation-menu__overlay"></div>
+    <div class="navigation-menu">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 col-xl-5 mb-5 mb-md-0">
+            <ul class="navigation-menu__list">
+              <li class="navigation-menu__list-item"><a class="navigation-menu__list-link" href="javascript:void(0)">projects</a>
+                <ul class="navigation-menu__list-inner">
+                  <li><a class="navigation-menu__list-link" href="./project-01.html">projects one</a></li>
+                  <li><a class="navigation-menu__list-link" href="./project-02.html">projects two</a></li>
+                </ul>
+              </li>
+              <li class="navigation-menu__list-item"><a class="navigation-menu__list-link" href="javascript:void(0)">galery</a>
+                <ul class="navigation-menu__list-inner">
+                  <li><a class="navigation-menu__list-link" href="./gallery-slider.html">gallery slider</a></li>
+                  <li><a class="navigation-menu__list-link" href="./gallery-album.html">gallery album</a></li>
+                </ul>
+              </li>
+              <li class="navigation-menu__list-item"><a class="navigation-menu__list-link" href="./about.html">about</a></li>
+              <li class="navigation-menu__list-item"><a class="navigation-menu__list-link" href="javascript:void(0)">articles</a>
+                <ul class="navigation-menu__list-inner">
+                  <li><a class="navigation-menu__list-link" href="./article-01.html">article one</a></li>
+                  <li><a class="navigation-menu__list-link" href="./article-02.html">article two</a></li>
+                </ul>
+              </li>
+              <li class="navigation-menu__list-item"><a class="navigation-menu__list-link" href="./blog.html">blog</a></li>
+              <li class="navigation-menu__list-item"><a class="navigation-menu__list-link" href="./contacts.html">contacts</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xl-5">
+            <div class="navigation-menu__content">
+              <p class="mb-5">Trandy Shania Street 21 55555 <br/>Carmenito Stylish Porto, Portugal</p>
+              <div class="social-icons mb-5"><a class="social-icon" href="http://twitter.com"><i class="fa fa-twitter"></i></a><a class="social-icon" href="http://facebook.com"><i class="fa fa-facebook"></i></a><a class="social-icon" href="http://linkedin.com"><i class="fa fa-linkedin"></i></a><a class="social-icon" href="http://instagram.com"><i class="fa fa-instagram"></i></a></div>
+              <div class="d-flex align-items-center mb-3"><img class="pr-2" src="./images/common/phone-icon.png" alt="icon"><a class="p link-hover" href="tel:+382365456987">+38 2365456987</a></div>
+              <div class="d-flex align-items-center mb-3"><img class="pr-2" src="./images/common/email-icon.png" alt="icon"><a class="p link-hover" href="mailto:hallo@celia.com">hallo@celia.com</a></div>
+              <div class="d-flex align-items-center"><img class="pr-2" src="./images/common/map-icon.png" alt="icon"><a class="p link-hover" href="http://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, District of Columbia, 20003">on Google Map</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </navigation>
+  <div class="page-name pt-xl-160 pb-4">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-5 col-6"><span class="page-name__title text-muted">Gallery slider</span></div>
+        <div class="col-xl-5 col-6">
+          <div class="page-name__line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gallery-slider pb-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-xl-5 mb-4 mb-lg-0">
+          <div class="gallery-slider__left swiper-container mr-lg-4">
+            <div class="gallery-slider__wrapper swiper-wrapper">
+              <div class="gallery-slider__slide swiper-slide"><a class="gallery-slider__image" href="./article-01.html">
+                  <figure class="image--figure" style="background-image:url(./images/gallery-slider/slide-left-1.jpg);"></figure>
+                </a></div>
+              <div class="gallery-slider__slide swiper-slide"><a class="gallery-slider__image" href="./article-01.html">
+                  <figure class="image--figure" style="background-image:url(./images/gallery-slider/slide-left-2.jpg);"></figure>
+                </a></div>
+              <div class="gallery-slider__slide swiper-slide"><a class="gallery-slider__image" href="./article-01.html">
+                  <figure class="image--figure" style="background-image:url(./images/gallery-slider/slide-left-3.jpg);"></figure>
+                </a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-5">
+          <div class="gallery-slider__right swiper-container ml-lg-4">
+            <div class="gallery-slider__wrapper swiper-wrapper mb-4">
+              <div class="gallery-slider__slide swiper-slide">
+                <h5 class="text-bold mb-4 animated-letters animated-letters--lfr">Wedding</h5><a class="gallery-slider__image image-link" href="./article-01.html">
+                  <div class="image-link__wrap">
+                    <figure class="image--figure" style="background-image:url(./images/gallery-slider/slide-right-1.jpg);"></figure>
+                  </div>
+                  <div class="image-link__title">
+                    <h5 class="animated-letters animated-letters--lfb">Go to article</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="gallery-slider__slide swiper-slide">
+                <h5 class="text-bold mb-4 animated-letters animated-letters--lfr">Recreation</h5><a class="gallery-slider__image image-link" href="./article-01.html">
+                  <div class="image-link__wrap">
+                    <figure class="image--figure" style="background-image:url(./images/gallery-slider/slide-right-2.jpg);"></figure>
+                  </div>
+                  <div class="image-link__title">
+                    <h5 class="animated-letters animated-letters--lfb">Go to article</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="gallery-slider__slide swiper-slide">
+                <h5 class="text-bold mb-4 animated-letters animated-letters--lfr">Mountains</h5><a class="gallery-slider__image image-link" href="./article-01.html">
+                  <div class="image-link__wrap">
+                    <figure class="image--figure" style="background-image:url(./images/gallery-slider/slide-right-3.jpg);"></figure>
+                  </div>
+                  <div class="image-link__title">
+                    <h5 class="animated-letters animated-letters--lfb">Go to article</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="gallery-slider__nav">
+              <div class="arrow arrow--next link-animation">
+                <h3 class="link-animation__hidden text-dark">Next Project <i class="fa fa-chevron-right"></i></h3>
+                <h3 class="link-animation__text text-muted">Next Project <i class="fa fa-chevron-right"></i></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="http://maps.google.com/maps/api/js?key=AIzaSyC9W9zxgNdfvLuO3GEQUZrTRBJQ9wj3_PU"></script>
+  <script src="./scripts/vendor.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>

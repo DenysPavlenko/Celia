@@ -1,0 +1,197 @@
+/* Home page sticky header */
+.home-sticky-header
+	position: relative
+	width: 100%
+	z-index: 1
+	&:after
+		position: absolute
+		content: ''
+		top: 0
+		right: 0
+		width: 50%
+		height: 100%
+		background-color: $primary-color
+		z-index: -1
+	&__title-wrap
+		width: 50%
+		display: flex
+		justify-content: center
+	&__title
+		width: 30vw
+
+/* Home page sticky articles */
+.home-sticky-articles
+	.home-sticky-article
+		width: 100%
+		display: flex
+		&:nth-child(odd)
+			// Heading
+			.home-sticky-article__heading
+				left: auto
+				right: 0
+				order: 1
+			.home-sticky-article__heading-wrap
+				margin-left: 0
+			// Content
+			.home-sticky-article__content
+				margin-left: 0
+				margin-right: auto
+		&:first-child
+			// Content
+			.home-sticky-article__content
+				margin-top: 180px
+				border-top: 1px solid $primary-color
+
+		// Heading
+		&__heading
+			position: relative
+			top: 0
+			left: 0
+			width: 50%
+			background-color: $primary-color
+			padding-top: 180px
+			height: 100vh
+			z-index: 1
+			&--is-fixed
+				position: fixed
+			&-wrap
+				position: relative
+				width: 100%
+				height: 100%
+				max-width: 39.6vw
+				overflow: hidden
+				margin-left: auto
+			&-title
+				position: absolute
+				width: 100%
+				text-align: center
+				top: 50%
+				padding: 0 15px
+				left: 0
+				transform: translate(0, -50%)
+
+		// Content
+		&__content
+			position: relative
+			padding-top: 180px
+			width: 50%
+			margin-left: auto
+			margin-right: 0
+			display: flex
+			flex-direction: column
+			justify-content: flex-start
+			align-items: center
+			z-index: 2
+			background-color: $light-color
+			overflow: hidden
+			&-item
+				overflow: hidden
+				margin-bottom: 100px
+				width: 30vw
+				&:hover
+					.link-animation__hidden
+						transition: all .5s $timing-function
+						width: 100%
+			&-image
+				position: relative
+				overflow: hidden
+				width: 100%
+				height: 30vw
+
++media-max($breakpoint-xl)
+	/* Home page sticky header */
+	.home-sticky-header
+		&__title
+			width: 34vw
+
+	/* Home page sticky article */
+	.home-sticky-articles
+		.home-sticky-article
+			// Heading
+			&__heading
+				&-wrap
+					max-width: 41.5vw
+			// Content
+			&__content
+				&-item
+					width: 34vw
+				&-image
+					height: 34vw
+
++media-max($breakpoint-lg)
+	/* Home page sticky header */
+	.home-sticky-header
+		max-width: $container-md
+		margin: 0 auto
+		padding-right: 15px
+		padding-left: 15px
+		&:after
+			display: none
+		&__title-wrap
+			width: 100%
+			margin-bottom: 80px
+		&__title
+			width: 100%
+
+	/* Home page sticky articles */
+	.home-sticky-articles
+		.home-sticky-article
+			max-width: $container-md
+			padding-right: 15px
+			padding-left: 15px
+			margin: 0 auto
+			flex-direction: column
+			margin-bottom: 40px
+			&:nth-child(odd)
+				// Heading
+				.home-sticky-article__heading
+					order: 0
+			&:first-child
+				// Content
+				.home-sticky-article__content
+					margin-top: 0
+					border-top: none
+
+			// Heading
+			&__heading
+				width: 100%
+				padding-top: 0
+				height: 500px
+				background-color: $light-color
+				&-wrap
+					max-width: 100%
+
+			// Content
+			&__content
+				width: 100%
+				padding-top: 60px
+				flex-direction: row
+				justify-content: between
+				flex-wrap: wrap
+				&-item
+					width: 50%
+					margin-bottom: 40px
+					&:nth-child(odd)
+						padding-right: 15px
+					&:nth-child(even)
+						padding-left: 15px
+				&-image
+					height: 200px
+
++media-max($breakpoint-sm)
+	/* Home page sticky articles */
+	.home-sticky-articles
+		.home-sticky-article
+			// Heading
+			&__heading
+				height: 400px
+			// Content
+			&__content
+				&-item
+					width: 100%
+					&:nth-child(odd)
+						padding-right: 0
+					&:nth-child(even)
+						padding-left: 0
+				&-image
+					height: 250px

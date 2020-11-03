@@ -1,0 +1,92 @@
+extends layouts/main
+
+block variables
+	- var title = 'Article'
+
+block content
+
+	//- Page name
+	.page-name.pt-xl-160.pb-4
+		.container
+			.row.justify-content-center.align-items-center
+				.col-6.col-xl-5
+					span.page-name__title.text-muted Article
+				.col-6.col-xl-5
+					.page-name__line
+
+	section
+		.container
+			.row.justify-content-center
+				.col-xl-10
+					h1.mb-4.animated-letters.animated-letters--lfr(data-scroll-animation="animated-letters--lfr-active") Aizuwak&shy;amatsu’s climate
+					p.mb-5.p-header.animated(data-scroll-animation="fadeInUp" data-scroll-animation-delay="0.2s") Photography is the art, application and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film. It is employed in many fields of science.
+
+	.article-banner-fluid
+		.animated-image(data-scroll-animation="revealIn")
+			img(src="./images/article/banner.jpg", class="image" alt="banner")
+
+	section.pb-5.pt-5
+		.container
+			.row.justify-content-center
+				.col-xl-10
+					h2.mb-4 Several people may have the same new term
+					p.mb-3.text-bold Several people may have coined the same new term from these roots independently. Hercules Florence, a French painter and inventor living in Campinas, Brazil, used the French form of the word, photographie, in private notes which a Brazilian historian believes were written in 1834.
+					p.mb-4 The German newspaper Vossische Zeitung of 25 February 1839 contained an article entitled Photographie, discussing several priority claims – especially Henry Fox Talbot's – regarding Daguerre's claim of invention. The article is the earliest known occurrence of the word in public print. It was signed "J.M.", believed to have been Berlin astronomer Johann von Maedler.
+					img(src="./images/article/image-1.jpg", class="image" alt="image")
+					p.text-center.text-muted.mt-3.mb-4 The German newspaper Vossische Zeitung of 25 February 1839
+			.row.justify-content-center
+				.col-sm-6.col-xl-5
+					.pr-lg-4
+						img(src="./images/article/image-2.jpg", class="image" alt="image")
+						p.text-center.text-muted.mt-3.mb-4 The German newspaper Vossische
+				.col-sm-6.col-xl-5
+					.pl-lg-4
+						img(src="./images/article/image-3.jpg", class="image" alt="image")
+						p.text-center.text-muted.mt-3.mb-4 Newspaper Vossische the German
+				.col-xl-10
+					p.mb-4 The German newspaper Vossische Zeitung of 25 February 1839 contained an article entitled Photographie, discussing several priority claims – especially Henry Fox Talbot's – regarding Daguerre's claim of invention. The article is the earliest known occurrence of the word in public print. It was signed "J.M.", believed to have been Berlin astronomer Johann von Maedler.
+
+	.video-banner(style="background-image: url('./images/video/video-bg.jpg')" data-skin="dark")
+		.container
+			.row
+				.col-12
+					.video-banner__button.d-flex.justify-content-center
+						a(href="https://www.youtube.com/watch?v=6v2L2UGZJAM" class="button popup-youtube") See now
+
+	section.bg-dark.pt-5.pb-5(data-skin="dark")
+		.container
+			.row.justify-content-center
+				.col-xl-10
+					h2.mb-4.text-light Find us in social
+					.d-flex.flex-column.flex-sm-row.mb-4
+						.d-flex.w-100
+							div
+								img(src="./images/article/social-img-1.jpg" class="image" alt="image")
+							div
+								img(src="./images/article/social-img-2.jpg" class="image" alt="image")
+							div
+								img(src="./images/article/social-img-3.jpg" class="image" alt="image")
+						.d-flex.w-100
+							div
+								img(src="./images/article/social-img-4.jpg" class="image" alt="image")
+							div
+								img(src="./images/article/social-img-5.jpg" class="image" alt="image")
+							div
+								img(src="./images/article/social-img-6.jpg" class="image" alt="image")
+
+					.mb-4.mb-lg-5
+						span.sup-title.text-light.mb-3 instagram
+						h3.text-light @celiagram
+
+					.social-links
+						a(href="http://example.com").social-link
+							span.sup-title.text-light instagram
+						a(href="http://example.com").social-link
+							span.sup-title.text-light twitter
+						a(href="http://example.com").social-link
+							span.sup-title.text-light pinterest
+						a(href="http://example.com").social-link
+							span.sup-title.text-light linkedin
+
+	include ./modules/top-arrow
+	include ./sections/footer-nav.pug

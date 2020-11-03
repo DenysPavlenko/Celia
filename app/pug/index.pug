@@ -1,0 +1,218 @@
+extends layouts/main
+
+block variables
+	- var title = 'Home page sticky'
+
+block content
+
+	//- Page header
+	header.home-sticky-header.pt-xl-160
+		.home-sticky-header__title-wrap
+			h1.home-sticky-header__title.animated(data-scroll-animation="fadeInLeft") Portfolio for artist / designer / agencies / etc
+
+	.home-sticky-articles
+		//- Article
+		article.home-sticky-article
+			//- Article title
+			section.home-sticky-article__heading
+				.home-sticky-article__heading-wrap.animated-image.animated-image--dark(data-scroll-animation="revealIn")
+					figure(class="image--figure" style="background-image: url('./images/home-sticky/article-1/slide-bg.jpg')")
+					h2.text-regular.text-light.home-sticky-article__heading-title cites of Japan
+
+			//- Article content
+			section.home-sticky-article__content
+				//- Content
+				a(href="./project-01.html" class="home-sticky-article__content-item animated" data-scroll-animation="fadeInUp")
+					.home-sticky-article__content-image.mb-3
+						figure(class="image--figure" style="background-image: url('./images/home-sticky/article-1/slide-img-1.jpg')")
+					span.sup-title.mb-3 City
+					.link-animation
+						h3.link-animation__hidden.text-dark
+							| Kyoto Prefecture
+						h3.link-animation__text.text-muted
+							| Kyoto Prefecture
+				//- Content
+				a(href="./project-02.html" class="home-sticky-article__content-item animated" data-scroll-animation="fadeInUp")
+					.home-sticky-article__content-image.mb-3
+						figure(class="image--figure" style="background-image: url('./images/home-sticky/article-1/slide-img-2.jpg')")
+					span.sup-title.mb-3 City
+					.link-animation
+						h3.link-animation__hidden.text-dark
+							| Tokyo
+						h3.link-animation__text.text-muted
+							| Tokyo
+				//- Content
+				a(href="./project-01.html" class="home-sticky-article__content-item animated" data-scroll-animation="fadeInUp")
+					.home-sticky-article__content-image.mb-3
+						figure(class="image--figure" style="background-image: url('./images/home-sticky/article-1/slide-img-3.jpg')")
+					span.sup-title.mb-3 City
+					.link-animation
+						h3.link-animation__hidden.text-dark
+							| My love japan
+						h3.link-animation__text.text-muted
+							| My love japan
+				//- Content
+				a(href="./project-02.html" class="home-sticky-article__content-item animated" data-scroll-animation="fadeInUp")
+					.home-sticky-article__content-image.mb-3
+						figure(class="image--figure" style="background-image: url('./images/home-sticky/article-1/slide-img-3.jpg')")
+					span.sup-title.mb-3 City
+					.link-animation
+						h3.link-animation__hidden.text-dark
+							| Kyoto Prefecture
+						h3.link-animation__text.text-muted
+							| Kyoto Prefecture
+
+		//- Article 2
+		article.home-sticky-article
+			//- Article title
+			section.home-sticky-article__heading
+				.home-sticky-article__heading-wrap.animated-image.animated-image--dark(data-scroll-animation="revealIn")
+					figure(class="image--figure" style="background-image: url('./images/home-sticky/article-2/slide-bg.jpg')")
+					h2.text-regular.text-light.home-sticky-article__heading-title In the Netherlands
+
+			//- Article content
+			section.home-sticky-article__content
+				//- Content
+				a(href="./project-01.html" class="home-sticky-article__content-item animated" data-scroll-animation="fadeInUp")
+					.home-sticky-article__content-image.mb-3
+						figure(class="image--figure" style="background-image: url('./images/home-sticky/article-2/slide-img-1.jpg')")
+					span.sup-title.mb-3 City
+					.link-animation
+						h3.link-animation__hidden.text-dark
+							| Groningen
+						h3.link-animation__text.text-muted
+							| Groningen
+				//- Content
+				a(href="./project-02.html" class="home-sticky-article__content-item animated" data-scroll-animation="fadeInUp")
+					.home-sticky-article__content-image.mb-3
+						figure(class="image--figure" style="background-image: url('./images/home-sticky/article-2/slide-img-2.jpg')")
+					span.sup-title.mb-3 City
+					.link-animation
+						h3.link-animation__hidden.text-dark
+							| Czaar Peterbuurt
+						h3.link-animation__text.text-muted
+							| Czaar Peterbuurt
+				//- Content
+				a(href="./project-01.html" class="home-sticky-article__content-item animated" data-scroll-animation="fadeInUp")
+					.home-sticky-article__content-image.mb-3
+						figure(class="image--figure" style="background-image: url('./images/home-sticky/article-2/slide-img-3.jpg')")
+					span.sup-title.mb-3 City
+					.link-animation
+						h3.link-animation__hidden.text-dark
+							| The Hague
+						h3.link-animation__text.text-muted
+							| The Hague
+				//- Content
+				a(href="./project-02.html" class="home-sticky-article__content-item animated" data-scroll-animation="fadeInUp")
+					.home-sticky-article__content-image.mb-3
+						figure(class="image--figure" style="background-image: url('./images/home-sticky/article-2/slide-img-4.jpg')")
+					span.sup-title.mb-3 City
+					.link-animation
+						h3.link-animation__hidden.text-dark
+							| Rotterdam
+						h3.link-animation__text.text-muted
+							| Rotterdam
+
+		//- Article 3
+		article.home-sticky-article
+			//- Article title
+			section.home-sticky-article__heading
+				.home-sticky-article__heading-wrap.animated-image.animated-image--dark(data-scroll-animation="revealIn")
+					figure(class="image--figure" style="background-image: url('./images/home-sticky/article-3/slide-bg.jpg')")
+					h2.text-regular.text-light.home-sticky-article__heading-title Dreaming of Australia
+
+			//- Article content
+			section.home-sticky-article__content
+				//- Content
+				a(href="./project-01.html" class="home-sticky-article__content-item animated" data-scroll-animation="fadeInUp")
+					.home-sticky-article__content-image.mb-3
+						figure(class="image--figure" style="background-image: url('./images/home-sticky/article-3/slide-img-1.jpg')")
+					span.sup-title.mb-3 City
+					.link-animation
+						h3.link-animation__hidden.text-dark
+							| Milsons Point
+						h3.link-animation__text.text-muted
+							| Milsons Point
+				//- Content
+				a(href="./project-02.html" class="home-sticky-article__content-item animated" data-scroll-animation="fadeInUp")
+					.home-sticky-article__content-image.mb-3
+						figure(class="image--figure" style="background-image: url('./images/home-sticky/article-3/slide-img-2.jpg')")
+					span.sup-title.mb-3 City
+					.link-animation
+						h3.link-animation__hidden.text-dark
+							| Melbourne
+						h3.link-animation__text.text-muted
+							| Melbourne
+				//- Content
+				a(href="./project-01.html" class="home-sticky-article__content-item animated" data-scroll-animation="fadeInUp")
+					.home-sticky-article__content-image.mb-3
+						figure(class="image--figure" style="background-image: url('./images/home-sticky/article-3/slide-img-3.jpg')")
+					span.sup-title.mb-3 City
+					.link-animation
+						h3.link-animation__hidden.text-dark
+							| Clifton
+						h3.link-animation__text.text-muted
+							| Clifton
+				//- Content
+				a(href="./project-02.html" class="home-sticky-article__content-item animated" data-scroll-animation="fadeInUp")
+					.home-sticky-article__content-image.mb-3
+						figure(class="image--figure" style="background-image: url('./images/home-sticky/article-3/slide-img-4.jpg')")
+					span.sup-title.mb-3 City
+					.link-animation
+						h3.link-animation__hidden.text-dark
+							| Brisbane
+						h3.link-animation__text.text-muted
+							| Brisbane
+
+		//- Article 4
+		article.home-sticky-article
+			//- Article title
+			section.home-sticky-article__heading
+				.home-sticky-article__heading-wrap.animated-image.animated-image--dark(data-scroll-animation="revealIn")
+					figure(class="image--figure" style="background-image: url('./images/home-sticky/article-4/slide-bg.jpg')")
+					h2.text-regular.text-light.home-sticky-article__heading-title traveling in Ukraine
+
+			//- Article content
+			section.home-sticky-article__content
+				//- Content
+				a(href="./project-01.html" class="home-sticky-article__content-item animated" data-scroll-animation="fadeInUp")
+					.home-sticky-article__content-image.mb-3
+						figure(class="image--figure" style="background-image: url('./images/home-sticky/article-4/slide-img-1.jpg')")
+					span.sup-title.mb-3 City
+					.link-animation
+						h3.link-animation__hidden.text-dark
+							| Kyiv
+						h3.link-animation__text.text-muted
+							| Kyiv
+				//- Content
+				a(href="./project-02.html" class="home-sticky-article__content-item animated" data-scroll-animation="fadeInUp")
+					.home-sticky-article__content-image.mb-3
+						figure(class="image--figure" style="background-image: url('./images/home-sticky/article-4/slide-img-2.jpg')")
+					span.sup-title.mb-3 City
+					.link-animation
+						h3.link-animation__hidden.text-dark
+							| Lviv
+						h3.link-animation__text.text-muted
+							| Lviv
+				//- Content
+				a(href="./project-01.html" class="home-sticky-article__content-item animated" data-scroll-animation="fadeInUp")
+					.home-sticky-article__content-image.mb-3
+						figure(class="image--figure" style="background-image: url('./images/home-sticky/article-4/slide-img-3.jpg')")
+					span.sup-title.mb-3 City
+					.link-animation
+						h3.link-animation__hidden.text-dark
+							| Yaremche
+						h3.link-animation__text.text-muted
+							| Yaremche
+				//- Content
+				a(href="./project-02.html" class="home-sticky-article__content-item animated" data-scroll-animation="fadeInUp")
+					.home-sticky-article__content-image.mb-3
+						figure(class="image--figure" style="background-image: url('./images/home-sticky/article-4/slide-img-4.jpg')")
+					span.sup-title.mb-3 City
+					.link-animation
+						h3.link-animation__hidden.text-dark
+							| Odesa
+						h3.link-animation__text.text-muted
+							| Odesa
+
+	include ./modules/top-arrow

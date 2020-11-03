@@ -1,0 +1,48 @@
+/* Gallery album */
+.gallery-album
+	&__item
+		width: calc(41.66667% - 1.8rem)
+	&__image
+		height: 640px
+		&--small
+			position: relative
+			.image-link
+				position: relative
+				height: 420px
+				top: 50%
+				transform: translateY(-50%)
+	&__sizer
+		width: calc(41.66667% - 1.8rem)
+		margin-left: 3.6rem
+
++media-max($breakpoint-xl)
+	/* Gallery album */
+	.gallery-album
+		&__item
+			width: 50%
+		&__sizer
+			width: 50%
+			margin-left: 0
+
++media-max($breakpoint-lg)
+	/* Gallery album */
+	.gallery-album
+		&__item
+			width: 100%
+		&__sizer
+			width: 100%
+		&__image
+			height: 500px
+			margin-bottom: 1.8rem
+			&--small
+				height: 400px
+				.image-link
+					height: 100%
+
++media-max($breakpoint-sm)
+	/* Gallery album */
+	.gallery-album
+		&__image
+			height: 300px
+			&--small
+				height: 250px

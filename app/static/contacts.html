@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contacts</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./images/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-touch-icon-114x114.png">
+  <link rel="stylesheet" type="text/css" href="./styles/vendor.css">
+  <link rel="stylesheet" type="text/css" href="./styles/main.css">
+</head>
+
+<body class="loaded">
+  <!-- Preloader-->
+  <div class="preloader">
+    <div class="preloader__overlay-one"></div>
+    <div class="preloader__overlay-two"></div>
+    <div class="preloader__logo logo logo--preloader"><img src="./images/logo.svg" alt="logo"></div>
+  </div>
+  <navigation class="navigation">
+    <div class="navigation-header animated" data-scroll-animation="fadeInDown"><a class="navigation-header__logo" href="./index.html">
+        <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
+      </a>
+      <div class="navigation-header__burger">
+        <div class="burger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+    <div class="navigation-menu__overlay"></div>
+    <div class="navigation-menu">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 col-xl-5 mb-5 mb-md-0">
+            <ul class="navigation-menu__list">
+              <li class="navigation-menu__list-item"><a class="navigation-menu__list-link" href="javascript:void(0)">projects</a>
+                <ul class="navigation-menu__list-inner">
+                  <li><a class="navigation-menu__list-link" href="./project-01.html">projects one</a></li>
+                  <li><a class="navigation-menu__list-link" href="./project-02.html">projects two</a></li>
+                </ul>
+              </li>
+              <li class="navigation-menu__list-item"><a class="navigation-menu__list-link" href="javascript:void(0)">galery</a>
+                <ul class="navigation-menu__list-inner">
+                  <li><a class="navigation-menu__list-link" href="./gallery-slider.html">gallery slider</a></li>
+                  <li><a class="navigation-menu__list-link" href="./gallery-album.html">gallery album</a></li>
+                </ul>
+              </li>
+              <li class="navigation-menu__list-item"><a class="navigation-menu__list-link" href="./about.html">about</a></li>
+              <li class="navigation-menu__list-item"><a class="navigation-menu__list-link" href="javascript:void(0)">articles</a>
+                <ul class="navigation-menu__list-inner">
+                  <li><a class="navigation-menu__list-link" href="./article-01.html">article one</a></li>
+                  <li><a class="navigation-menu__list-link" href="./article-02.html">article two</a></li>
+                </ul>
+              </li>
+              <li class="navigation-menu__list-item"><a class="navigation-menu__list-link" href="./blog.html">blog</a></li>
+              <li class="navigation-menu__list-item"><a class="navigation-menu__list-link" href="./contacts.html">contacts</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xl-5">
+            <div class="navigation-menu__content">
+              <p class="mb-5">Trandy Shania Street 21 55555 <br/>Carmenito Stylish Porto, Portugal</p>
+              <div class="social-icons mb-5"><a class="social-icon" href="http://twitter.com"><i class="fa fa-twitter"></i></a><a class="social-icon" href="http://facebook.com"><i class="fa fa-facebook"></i></a><a class="social-icon" href="http://linkedin.com"><i class="fa fa-linkedin"></i></a><a class="social-icon" href="http://instagram.com"><i class="fa fa-instagram"></i></a></div>
+              <div class="d-flex align-items-center mb-3"><img class="pr-2" src="./images/common/phone-icon.png" alt="icon"><a class="p link-hover" href="tel:+382365456987">+38 2365456987</a></div>
+              <div class="d-flex align-items-center mb-3"><img class="pr-2" src="./images/common/email-icon.png" alt="icon"><a class="p link-hover" href="mailto:hallo@celia.com">hallo@celia.com</a></div>
+              <div class="d-flex align-items-center"><img class="pr-2" src="./images/common/map-icon.png" alt="icon"><a class="p link-hover" href="http://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, District of Columbia, 20003">on Google Map</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </navigation>
+  <div class="page-name pt-xl-160 pb-4">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-6 col-xl-5"><span class="page-name__title text-muted">Contacts</span></div>
+        <div class="col-6 col-xl-5">
+          <div class="page-name__line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contacts image-half image-half--right mb-5">
+    <div class="image-half__wrapper mb-4 mb-xl-0 animated-image" data-scroll-animation="revealIn">
+      <div class="map">
+        <div id="map"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-xl-5 offset-xl-1">
+          <div class="contacts-wrapper">
+            <div class="contacts-info">
+              <h2 class="pt-3 mb-5">Trandy Shania st. 21 55555 Carmenito Stylish Porto, Portugal</h2>
+              <div class="social-icons mb-5"><a class="social-icon" href="http://twitter.com"><i class="fa fa-twitter"></i></a><a class="social-icon" href="http://facebook.com"><i class="fa fa-facebook"></i></a><a class="social-icon" href="http://linkedin.com"><i class="fa fa-linkedin"></i></a><a class="social-icon" href="http://instagram.com"><i class="fa fa-instagram"></i></a></div>
+              <div class="d-flex align-items-center mb-4"><img class="pr-2" src="./images/common/phone-icon.png" alt="icon"><a class="h3 text-regular link-hover" href="tel:+382365456987">+38 2365456987</a></div>
+              <div class="d-flex align-items-center mb-5"><img class="pr-2" src="./images/common/email-icon.png" alt="icon"><a class="h3 text-regular link-hover" href="mailto:hallo@celia.com">hallo@celia.com</a></div>
+              <button class="button contacts__button mb-5">Some questions?</button>
+            </div>
+            <div class="contacts-popup">
+              <div class="contacts-popup__close"><span></span></div>
+              <form class="contacts-popup__form d-flex flex-column align-items-start mt-4">
+                <label>Name</label>
+                <input class="input contacts-popup__input mt-2 mb-5" type="text" value="">
+                <label>Email</label>
+                <input class="input contacts-popup__input mt-2 mb-5" type="email" value="">
+                <label>Question</label>
+                <input class="input contacts-popup__input mt-2 mb-5" type="text" value="">
+                <button class="button contacts-popup__send" type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="http://maps.google.com/maps/api/js?key=AIzaSyC9W9zxgNdfvLuO3GEQUZrTRBJQ9wj3_PU"></script>
+  <script src="./scripts/vendor.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>

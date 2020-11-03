@@ -1,0 +1,29 @@
+/* Image half styles */
+.image-half
+	position: relative
+	&__wrapper
+		position: absolute
+		overflow: hidden
+		width: calc(50% - 2.45rem)
+		height: 100%
+		left: 0
+		top: 0
+	&--right
+		.image-half__wrapper
+			right: 0
+			left: auto
+
++media-max($breakpoint-xl)
+	/* Image half styles */
+	.image-half
+		position: relative
+		&__wrapper
+			position: relative
+			height: 500px
+			width: 100%
+
++media-max($breakpoint-sm)
+	/* Image half styles */
+	.image-half
+		&__wrapper
+			height: 300px

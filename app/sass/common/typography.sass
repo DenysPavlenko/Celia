@@ -1,0 +1,121 @@
+/* Typography styles */
+html, body
+	font-family: 'Sarabun', sans-serif
+	font-size: $base-font
+	text-align: left
+	font-weight: 400
+	color: $text-dark
+
+input, select, textarea, button
+	font-family: inherit
+
+h1, .h1
+	font-size: rem(50px)
+	line-height: rem(57px)
+	font-weight: 700
+	margin-top: -13px
+h2, .h2
+	position: relative
+	font-size: rem(50px)
+	line-height: rem(57px)
+	font-weight: 400
+	margin-top: -10px
+.h2-char
+	position: absolute
+	left: -60px
+	bottom: 5px
+	font-size: rem(40px)
+	line-height: rem(40px)
+	font-weight: 700
+	margin-top: -10px
+h3, .h3
+	font-size: rem(32px)
+	line-height: rem(43px)
+	font-weight: 700
+	margin-top: -13px
+h4, .h4
+	font-size: rem(32px)
+	line-height: rem(34px)
+	font-weight: 700
+h5, .h5
+	font-size: rem(44px)
+	line-height: rem(60px)
+	font-weight: 400
+label
+	font-size: rem(18px)
+	line-height: rem(18px)
+	letter-spacing: 0.05em
+	text-transform: uppercase
+	font-weight: 400
+input
+	font-size: rem(30px)
+	line-height: rem(30px)
+	font-weight: 400
+
+p, .p
+	font-size: rem(22px)
+	line-height: rem(32px)
+	font-weight: 400
+	margin-top: -7px
+p.p-header
+	font-size: rem(25px)
+	line-height: rem(32px)
+	font-weight: 700
+	margin-top: -7px
+
+.sup-title
+	position: relative
+	display: block
+	padding-left: rem(55px)
+	font-size: rem(18px)
+	line-height: rem(15px)
+	font-weight: 400
+	text-transform: uppercase
+	&:after
+		position: absolute
+		content: ''
+		left: 0
+		top: 50%
+		transform: translateY(-50%)
+		width: rem(30px)
+		height: 1px
+		background-color: $text-dark
+.sup-title.text-light
+	&:after
+		background-color: $text-light
+
+.page-name__title
+	font-size: rem(20px)
+	line-height: rem(20px)
+	font-weight: 700
+	display: inline-block
+	padding: 10px 0
+
+.text-center
+	text-align: center
+.text-bold
+	font-weight: 700
+.text-regular
+	font-weight: 400
+
+a.link-hover
+	transition: 0.2s $timing-function
+	&:hover
+		color: $text-muted
+
++media-max($breakpoint-xl)
+	/* Typography styles */
+	h2, .h2
+		position: relative
+		font-size: rem(50px)
+		line-height: rem(57px)
+		font-weight: 400
+		margin-top: -10px
+	.h2-char
+		position: static
+		margin-right: 10px
+
++media-max($breakpoint-sm)
+	/* Typography styles */
+	html, body
+		font-size: 20px

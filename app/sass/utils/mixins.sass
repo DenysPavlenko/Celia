@@ -1,0 +1,27 @@
+// Px to rem
+@function rem($size)
+	$remSize: $size / $base-font;
+	@return #{$remSize}rem;
+
+// Fonts
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal)
+	@font-face
+		font-family: $font-family
+		font-weight: $weight
+		font-style: $style
+		src: url('#{$file-path}.eot')
+		src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype')
+
+
+// Media queries
+@mixin media-min($size)
+	@media (min-width : $size)
+		@content
+
+@mixin media-max($size)
+	@media (max-width : $size)
+		@content
+
+@mixin media-min-max($min, $max)
+	@media (min-width: $min) and (max-width: $max)
+		@content
