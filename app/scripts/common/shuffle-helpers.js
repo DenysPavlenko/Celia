@@ -1,3 +1,3 @@
 export function shuffleFiltering(Obj, val) {
-	Obj.filter(val);
+  Obj.filter(val);
 }

@@ -1,150 +1,150 @@
 /* Animations */
 .animated
-	opacity: 0
+  opacity: 0
 
 .fadeIn
-	animation: fadeIn 1s forwards
-	animation-timing-function: $timing-function
+  animation: fadeIn 1s forwards
+  animation-timing-function: $timing-function
 @keyframes fadeIn
-	from
-		opacity: 0
-	to
-		opacity: 1
+  from
+    opacity: 0
+  to
+    opacity: 1
 
 .fadeInUp
-	animation: fadeInUp 1s forwards
-	animation-timing-function: $timing-function
+  animation: fadeInUp 1s forwards
+  animation-timing-function: $timing-function
 @keyframes fadeInUp
-	from
-		transform: translate3d(0, 50px, 0)
-		opacity: 0
-	to
-		transform: translate3d(0, 0, 0)
-		opacity: 1
+  from
+    transform: translate3d(0, 50px, 0)
+    opacity: 0
+  to
+    transform: translate3d(0, 0, 0)
+    opacity: 1
 
 .fadeInDown
-	animation: fadeInDown 1s forwards
-	animation-timing-function: $timing-function
+  animation: fadeInDown 1s forwards
+  animation-timing-function: $timing-function
 @keyframes fadeInDown
-	from
-		transform: translate3d(0, -50px, 0)
-		opacity: 0
-	to
-		transform: translate3d(0, 0, 0)
-		opacity: 1
+  from
+    transform: translate3d(0, -50px, 0)
+    opacity: 0
+  to
+    transform: translate3d(0, 0, 0)
+    opacity: 1
 
 .fadeInLeft
-	animation: fadeInLeft 1s forwards
-	animation-timing-function: $timing-function
+  animation: fadeInLeft 1s forwards
+  animation-timing-function: $timing-function
 @keyframes fadeInLeft
-	from
-		transform: translate3d(-50px, 0, 0)
-		opacity: 0
-	to
-		transform: translate3d(0, 0, 0)
-		opacity: 1
+  from
+    transform: translate3d(-50px, 0, 0)
+    opacity: 0
+  to
+    transform: translate3d(0, 0, 0)
+    opacity: 1
 
 /* Link hover */
 .animated-image
-	>*
-		visibility: hidden
+  >*
+    visibility: hidden
 .animated-image--dark.revealIn
-	&:after
-		background-color: $secondary-color
+  &:after
+    background-color: $secondary-color
 .revealIn
-	position: relative
-	overflow: hidden
-	z-index: 1
-	>*
-		animation: show-image .1s linear both
-		animation-delay: 0.8s
-	&:after
-		position: absolute
-		content: ''
-		top: 0
-		left: 0
-		width: 100%
-		height: 100%
-		background-color: $primary-color
-		z-index: 20
-		animation: reveal-overlay 1.5s $timing-function both
+  position: relative
+  overflow: hidden
+  z-index: 1
+  >*
+    animation: show-image .1s linear both
+    animation-delay: 0.8s
+  &:after
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $primary-color
+    z-index: 20
+    animation: reveal-overlay 1.5s $timing-function both
 
 // Image show
 @keyframes show-image
-	to
-		visibility: visible
+  to
+    visibility: visible
 // Reveal overlay
 @keyframes reveal-overlay
-	0%
-		left: -2%
-		width: 0%
-	50%
-		left: -2%
-		width: 102%
-	100%
-		left: 102%
-		width: 0
+  0%
+    left: -2%
+    width: 0%
+  50%
+    left: -2%
+    width: 102%
+  100%
+    left: 102%
+    width: 0
 
 /* Link animation */
 .link-animation
-	position: relative
-	cursor: pointer
-	white-space: nowrap
-	display: inline-block
-	width: 100%
-	overflow: hidden
-	padding: 4px 0
-	&__hidden
-		position: absolute
-		z-index: 2
-		width: 0
-		left: 0
-		top: 0
-		padding: 4px 0
-		overflow: hidden
-		transition: all .3s $timing-function
-	&__text
-		position: relative
-		z-index: 1
-	&:hover
-		.link-animation__hidden
-			width: 100%
+  position: relative
+  cursor: pointer
+  white-space: nowrap
+  display: inline-block
+  width: 100%
+  overflow: hidden
+  padding: 4px 0
+  &__hidden
+    position: absolute
+    z-index: 2
+    width: 0
+    left: 0
+    top: 0
+    padding: 4px 0
+    overflow: hidden
+    transition: all .3s $timing-function
+  &__text
+    position: relative
+    z-index: 1
+  &:hover
+    .link-animation__hidden
+      width: 100%
 .link-animation.link-animation--reverse
-	direction: rtl
-	.link-animation__hidden
-		left: 100%
-	&:hover
-		.link-animation__hidden
-			left: 0
+  direction: rtl
+  .link-animation__hidden
+    left: 100%
+  &:hover
+    .link-animation__hidden
+      left: 0
 
 /* Letters animation */
 .animated-letters
-	.animated-letter
-		display: inline-block
-		opacity: 0
-		transform: translateX(0px)
-	&--lfb-active
-		.animated-letter
-			animation: lettersFromBottom .2s $timing-function forwards
-	&--lfr-active
-		.animated-letter
-			animation: lettersFromRight .5s $timing-function forwards
+  .animated-letter
+    display: inline-block
+    opacity: 0
+    transform: translateX(0px)
+  &--lfb-active
+    .animated-letter
+      animation: lettersFromBottom .2s $timing-function forwards
+  &--lfr-active
+    .animated-letter
+      animation: lettersFromRight .5s $timing-function forwards
 
 
 // Letters from bottom animation
 @keyframes lettersFromBottom
-	0%
-		opacity: 0
-		transform: translateY(20px)
-	100%
-		opacity: 1
-		transform: translateY(0)
+  0%
+    opacity: 0
+    transform: translateY(20px)
+  100%
+    opacity: 1
+    transform: translateY(0)
 
 // Letters from right animation
 @keyframes lettersFromRight
-	0%
-		opacity: 0
-		transform: translateX(100px)
-	100%
-		opacity: 1
-		transform: translateX(0)
+  0%
+    opacity: 0
+    transform: translateX(100px)
+  100%
+    opacity: 1
+    transform: translateX(0)

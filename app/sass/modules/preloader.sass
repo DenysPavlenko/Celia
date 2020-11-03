@@ -1,41 +1,41 @@
 /* Preloader */
 .preloader
-	position: fixed
-	top: 0
-	left: 0
-	width: 100%
-	height: 100%
-	z-index: 2000
-	&__overlay-one,
-	&__overlay-two
-		position: absolute
-		content: ''
-		left: 0
-		top: 0
-		width: 100%
-		height: 100%
-		transform: translateY(0)
-	&__overlay-one
-		background-color: $primary-color
-		&--is-hidden
-			animation: preloaderOverlay .5s $timing-function forwards
-	&__overlay-two
-		background-color: $light-color
-		&--is-shown
-			animation: preloaderOverlay .5s $timing-function forwards
-	&__logo
-		position: absolute
-		top: 50%
-		left: 50%
-		transform: translate(-50%,-50%)
-		width: 150px
-		&--is-hidden
-			animation: preloaderLogo .4s $timing-function forwards
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 2000
+  &__overlay-one,
+  &__overlay-two
+    position: absolute
+    content: ''
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    transform: translateY(0)
+  &__overlay-one
+    background-color: $primary-color
+    &--is-hidden
+      animation: preloaderOverlay .5s $timing-function forwards
+  &__overlay-two
+    background-color: $light-color
+    &--is-shown
+      animation: preloaderOverlay .5s $timing-function forwards
+  &__logo
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    width: 150px
+    &--is-hidden
+      animation: preloaderLogo .4s $timing-function forwards
 
 // Preloader animations
 @keyframes preloaderOverlay
-	100%
-		transform: translateY(-100%)
+  100%
+    transform: translateY(-100%)
 @keyframes preloaderLogo
-	100%
-		opacity: 0
+  100%
+    opacity: 0

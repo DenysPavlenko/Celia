@@ -1,108 +1,108 @@
 /* Navigation */
 .navigation-header
-	position: absolute
-	top: 0
-	left: 0
-	padding: 35px 35px 0 35px
-	width: 100%
-	display: flex
-	justify-content: space-between
-	align-items: center
-	z-index: 500
-	&--is-fixed
-		position: fixed
+  position: absolute
+  top: 0
+  left: 0
+  padding: 35px 35px 0 35px
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  z-index: 500
+  &--is-fixed
+    position: fixed
 
 .navigation-menu
-	position: fixed
-	left: 0
-	top: 0
-	height: 100%
-	width: 100%
-	background-color: $light-color
-	z-index: 300
-	align-items: center
-	overflow-y: scroll
-	display: none
-	user-select: none
-	&--is-active
-		display: flex
-	.container
-		margin: auto
-		padding-top: 150px
-		padding-bottom: 150px
-	&__list-item
-		&:not(:last-child)
-			margin-bottom: 20px
-	&__list-link
-		display: inline-block
-		font-size: rem(70px)
-		line-height: rem(49px)
-		height: rem(70px)
-		font-weight: 700
-		color: $text-dark
-		transition: 0.3s $timing-function
-		&:hover
-			color: $text-muted
-		&--is-active
-			color: $text-muted !important
-	&__list-inner
-		display: none
-		padding-top: 30px
-		padding-bottom: 30px
-		li
-			margin-bottom: 10px
-		.navigation-menu__list-link
-			font-size: rem(40px)
-			line-height: rem(40px)
-			font-weight: 400
-			height: auto
+  position: fixed
+  left: 0
+  top: 0
+  height: 100%
+  width: 100%
+  background-color: $light-color
+  z-index: 300
+  align-items: center
+  overflow-y: scroll
+  display: none
+  user-select: none
+  &--is-active
+    display: flex
+  .container
+    margin: auto
+    padding-top: 150px
+    padding-bottom: 150px
+  &__list-item
+    &:not(:last-child)
+      margin-bottom: 20px
+  &__list-link
+    display: inline-block
+    font-size: rem(70px)
+    line-height: rem(49px)
+    height: rem(70px)
+    font-weight: 700
+    color: $text-dark
+    transition: 0.3s $timing-function
+    &:hover
+      color: $text-muted
+    &--is-active
+      color: $text-muted !important
+  &__list-inner
+    display: none
+    padding-top: 30px
+    padding-bottom: 30px
+    li
+      margin-bottom: 10px
+    .navigation-menu__list-link
+      font-size: rem(40px)
+      line-height: rem(40px)
+      font-weight: 400
+      height: auto
 
 .navigation-menu__overlay
-	position: fixed
-	content: ''
-	top: 0
-	left: 0
-	width: 100%
-	height: 100%
-	transform: translateY(-100%)
-	z-index: 400
-	background-color: $primary-color
-	animation-duration: 1s
-	&--is-active
-		animation-name: navigationOverlay
-		animation-timing-function: $timing-function
-		animation-fill-mode: forwards
+  position: fixed
+  content: ''
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  transform: translateY(-100%)
+  z-index: 400
+  background-color: $primary-color
+  animation-duration: 1s
+  &--is-active
+    animation-name: navigationOverlay
+    animation-timing-function: $timing-function
+    animation-fill-mode: forwards
 
 // Navigation animations
 @keyframes navigationOverlay
-	0%
-		transform: translateY(100%)
-	50%
-		transform: translateY(0%)
-	100%
-		transform: translateY(-100%)
+  0%
+    transform: translateY(100%)
+  50%
+    transform: translateY(0%)
+  100%
+    transform: translateY(-100%)
 
 
 +media-max($breakpoint-xl)
-	/* Navigation */
-	.navigation
-		&-header
-			padding: 35px 15px 0 15px
+  /* Navigation */
+  .navigation
+    &-header
+      padding: 35px 15px 0 15px
 
 +media-max($breakpoint-lg)
-	/* Navigation */
-	.navigation
-		position: fixed
-		top: 0
-		left: 0
-		width: 100%
-		z-index: 1000
-		&-header
-			position: relative
-			padding: 20px 15px
-			background-color: $light-color
-			box-shadow: $primary-shadow
-			top: 0
-			height: auto
-			&--is-hidden
-				top: 0
+  /* Navigation */
+  .navigation
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 1000
+    &-header
+      position: relative
+      padding: 20px 15px
+      background-color: $light-color
+      box-shadow: $primary-shadow
+      top: 0
+      height: auto
+      &--is-hidden
+        top: 0

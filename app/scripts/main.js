@@ -18,25 +18,25 @@ import contactsPopup from './modules/contacts-popup'
 
 // On document ready
 $(function (){
-	homePageSticky();
-	homePageSlides();
-	topArrow();
-	navigationMenu();
-	animatedLetters();
-	projectSlider();
-	videoPopup();
-	blogArticles();
-	galleryAlbum();
-	gallerySlider();
-	contactsPopup();
-	map();
+  homePageSticky();
+  homePageSlides();
+  topArrow();
+  navigationMenu();
+  animatedLetters();
+  projectSlider();
+  videoPopup();
+  blogArticles();
+  galleryAlbum();
+  gallerySlider();
+  contactsPopup();
+  map();
 });
 
 // On window load
 $(window).on('load', function () {
-	/* Run scroll animations after preloader */
-	preloader([
-		afterloadAnimations,
-		scrollAnimations
-	]);
+  /* Run scroll animations after preloader */
+  preloader([
+    afterloadAnimations,
+    scrollAnimations
+  ]);
 });

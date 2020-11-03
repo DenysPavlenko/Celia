@@ -1,63 +1,63 @@
 /* Table styles */
 .thead
-	position: relative
-	padding-bottom: 30px
-	&:after
-		position: absolute
-		bottom: 0
-		left: 0
-		content: ''
-		width: 100%
-		border-bottom: 1px solid $primary-color
+  position: relative
+  padding-bottom: 30px
+  &:after
+    position: absolute
+    bottom: 0
+    left: 0
+    content: ''
+    width: 100%
+    border-bottom: 1px solid $primary-color
 .tbody
-	position: relative
-	&:after
-		position: absolute
-		left: 0
-		bottom: 0
-		content: ''
-		width: 100%
-		border-bottom: 1px solid $primary-color
+  position: relative
+  &:after
+    position: absolute
+    left: 0
+    bottom: 0
+    content: ''
+    width: 100%
+    border-bottom: 1px solid $primary-color
 .tbody-number
-	position: absolute
-	left: -60px
-	color: $text-muted
+  position: absolute
+  left: -60px
+  color: $text-muted
 .td
-	padding: 14px 0 22px
+  padding: 14px 0 22px
 
 +media-max($breakpoint-xl)
-	/* Table styles */
-	.tbody-number
-		position: relative
-		left: 0
-		margin-right: 10px
+  /* Table styles */
+  .tbody-number
+    position: relative
+    left: 0
+    margin-right: 10px
 
 +media-max($breakpoint-lg)
-	/* Table styles */
-	.tbody-number
-		display: none
-	.td
-		.tbody-title
-			padding-left: 25%
-		&:before
-			position: absolute
-			content: attr(data-title)
-			left: 0
-			margin-top: 10px
-			color: $text-light
-			font-size: rem(18px)
-			line-height: rem(20px)
-			font-weight: 400
-			letter-spacing: 0.05em
-			text-transform: uppercase
+  /* Table styles */
+  .tbody-number
+    display: none
+  .td
+    .tbody-title
+      padding-left: 25%
+    &:before
+      position: absolute
+      content: attr(data-title)
+      left: 0
+      margin-top: 10px
+      color: $text-light
+      font-size: rem(18px)
+      line-height: rem(20px)
+      font-weight: 400
+      letter-spacing: 0.05em
+      text-transform: uppercase
 
 +media-max($breakpoint-sm)
-	/* Table styles */
-	.td
-		.tbody-title
-			padding-left: 0
-		&:before
-			position: relative
-			display: block
-			margin-top: 0
-			margin-bottom: 10px
+  /* Table styles */
+  .td
+    .tbody-title
+      padding-left: 0
+    &:before
+      position: relative
+      display: block
+      margin-top: 0
+      margin-bottom: 10px

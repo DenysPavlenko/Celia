@@ -1,33 +1,33 @@
 /* Social links styles */
 .social-links
-	display: flex
-	flex-wrap: wrap
-	&--vertical
-		flex-direction: column
-		.social-link
-			&:not(:last-child)
-				margin-right: 0
-				margin-bottom: rem(60px)
+  display: flex
+  flex-wrap: wrap
+  &--vertical
+    flex-direction: column
+    .social-link
+      &:not(:last-child)
+        margin-right: 0
+        margin-bottom: rem(60px)
 .social-link
-	display: inline-block
-	&:not(:last-child)
-		margin-right: rem(80px)
-		margin-bottom: 20px
-	span
-		transition: 0.2s $timing-function
-		&:hover
-			opacity: 0.6
+  display: inline-block
+  &:not(:last-child)
+    margin-right: rem(80px)
+    margin-bottom: 20px
+  span
+    transition: 0.2s $timing-function
+    &:hover
+      opacity: 0.6
 
 
 +media-max($breakpoint-lg)
-	/* Social links styles */
-	.social-links
-		&--vertical
-			flex-direction: row
-			.social-link
-				&:not(:last-child)
-					margin-right: rem(50px)
-					margin-bottom: rem(20px)
-	.social-link
-		&:not(:last-child)
-			margin-right: rem(50px)
+  /* Social links styles */
+  .social-links
+    &--vertical
+      flex-direction: row
+      .social-link
+        &:not(:last-child)
+          margin-right: rem(50px)
+          margin-bottom: rem(20px)
+  .social-link
+    &:not(:last-child)
+      margin-right: rem(50px)

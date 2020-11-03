@@ -1,41 +1,41 @@
 /* Gallery slider */
 .gallery-slider
-	&__wrapper
-		width: 100%
-		height: 100%
-	&__slide
-		width: 100%
-		height: 100%
-		overflow: hidden
-	&__left
-		.gallery-slider__image
-			height: 640px
-	&__right
-		.gallery-slider__image
-			height: 420px
-	&__image
-		width: 100%
-		position: relative
-		display: block
-	&__nav
-		float: right
+  &__wrapper
+    width: 100%
+    height: 100%
+  &__slide
+    width: 100%
+    height: 100%
+    overflow: hidden
+  &__left
+    .gallery-slider__image
+      height: 640px
+  &__right
+    .gallery-slider__image
+      height: 420px
+  &__image
+    width: 100%
+    position: relative
+    display: block
+  &__nav
+    float: right
 
 +media-max($breakpoint-xl)
-	/* Gallery slider */
-	.gallery-slider
-		&__left
-			.gallery-slider__image
-				height: 540px
-		&__right
-			.gallery-slider__image
-				height: 320px
+  /* Gallery slider */
+  .gallery-slider
+    &__left
+      .gallery-slider__image
+        height: 540px
+    &__right
+      .gallery-slider__image
+        height: 320px
 
 +media-max($breakpoint-sm)
-	/* Gallery slider */
-	.gallery-slider
-		&__left
-			.gallery-slider__image
-				height: 300px
-		&__right
-			.gallery-slider__image
-				height: 250px
+  /* Gallery slider */
+  .gallery-slider
+    &__left
+      .gallery-slider__image
+        height: 300px
+    &__right
+      .gallery-slider__image
+        height: 250px

@@ -1,82 +1,82 @@
 extends layouts/main
 
 block variables
-	- var title = 'Blog'
+  - var title = 'Blog'
 
 block content
 
-	//- Page name
-	.page-name.pt-xl-160.pb-4
-		.container
-			.row.justify-content-center.align-items-center
-				.col-xl-5.col-6
-					span.page-name__title.text-muted Blog
-				.col-xl-5.col-6
-					.page-name__line
+  //- Page name
+  .page-name.pt-xl-160.pb-4
+    .container
+      .row.justify-content-center.align-items-center
+        .col-xl-5.col-6
+          span.page-name__title.text-muted Blog
+        .col-xl-5.col-6
+          .page-name__line
 
-	.blog
-		.container
-			.row.justify-content-center
-				.col-xl-10
-					ul.blog-nav.filter-nav.pb-5
-						li.h4.filter-nav__link.filter-nav__link--is-active(data-filter-name="all") All
-						li.h4.filter-nav__link(data-filter-name="design") Design
-						li.h4.filter-nav__link(data-filter-name="branding") Branding
-						li.h4.filter-nav__link(data-filter-name="app") App
+  .blog
+    .container
+      .row.justify-content-center
+        .col-xl-10
+          ul.blog-nav.filter-nav.pb-5
+            li.h4.filter-nav__link.filter-nav__link--is-active(data-filter-name="all") All
+            li.h4.filter-nav__link(data-filter-name="design") Design
+            li.h4.filter-nav__link(data-filter-name="branding") Branding
+            li.h4.filter-nav__link(data-filter-name="app") App
 
-			//- Articles
-			.row.justify-content-center.blog-articles
-				//- Article
-				.col-xl-10.blog-article.mb-5(data-groups='["branding"]')
-					.row
-						.col-12.col-lg-6
-							.pr-lg-4
-								span.sup-title.mb-3 design
-								h3.mb-3 Although it is located in an valley
-								p.mb-3.text-bold Photography is the result of combining several technical discoveries, relating to seeing an image and capturing the image.
-								a(href="./article-01.html")
-									img(src="./images/blog/image-1.jpg" class="image" alt="image")
-						.col-12.col-lg-6.d-none.d-lg-block
-							.pl-lg-4.h-100
-								a(href="./article-01.html" class="image-link")
-									.image-link__wrap
-										figure(style="background-image:url(./images/blog/image-2.jpg);" class="image--figure")
-									.image-link__title
-										h5.animated-letters.animated-letters--lfb Go to article
-				//- Article
-				.col-xl-10.blog-article.mb-5(data-groups='["design"]')
-					.row
-						.col-12.col-lg-6
-							.pr-lg-4
-								span.sup-title.mb-3 design
-								h3.mb-3 Aizuwakamatsu's climate
-								p.mb-3.text-bold Photography is the result of combining several technical discoveries, relating to seeing an image and capturing the image.
-								a(href="./article-01.html")
-									img(src="./images/blog/image-3.jpg" class="image" alt="image")
-						.col-12.col-lg-6.d-none.d-lg-block
-							.pl-lg-4.h-100
-								a(href="./article-01.html" class="image-link")
-									.image-link__wrap
-										figure(style="background-image:url(./images/blog/image-4.jpg);" class="image--figure")
-									.image-link__title
-										h5.animated-letters.animated-letters--lfb Go to article
-				//- Article
-				.col-xl-10.blog-article.mb-4(data-groups='["app"]')
-					.row
-						.col-12.col-lg-6
-							.pr-lg-4
-								span.sup-title.mb-3 design
-								h3.mb-3 Resembles that of the Hokuriku
-								p.mb-3.text-bold Photography is the result of combining several technical discoveries, relating to seeing an image and capturing the image.
-								a(href="./article-01.html")
-									img(src="./images/blog/image-5.jpg" class="image" alt="image")
-						.col-12.col-lg-6.d-none.d-lg-block
-							.pl-lg-4.h-100
-								a(href="./article-01.html" class="image-link")
-									.image-link__wrap
-										figure(style="background-image:url(./images/blog/image-6.jpg);" class="image--figure")
-									.image-link__title
-										h5.animated-letters.animated-letters--lfb Go to article
+      //- Articles
+      .row.justify-content-center.blog-articles
+        //- Article
+        .col-xl-10.blog-article.mb-5(data-groups='["branding"]')
+          .row
+            .col-12.col-lg-6
+              .pr-lg-4
+                span.sup-title.mb-3 design
+                h3.mb-3 Although it is located in an valley
+                p.mb-3.text-bold Photography is the result of combining several technical discoveries, relating to seeing an image and capturing the image.
+                a(href="./article-01.html")
+                  img(src="./images/blog/image-1.jpg" class="image" alt="image")
+            .col-12.col-lg-6.d-none.d-lg-block
+              .pl-lg-4.h-100
+                a(href="./article-01.html" class="image-link")
+                  .image-link__wrap
+                    figure(style="background-image:url(./images/blog/image-2.jpg);" class="image--figure")
+                  .image-link__title
+                    h5.animated-letters.animated-letters--lfb Go to article
+        //- Article
+        .col-xl-10.blog-article.mb-5(data-groups='["design"]')
+          .row
+            .col-12.col-lg-6
+              .pr-lg-4
+                span.sup-title.mb-3 design
+                h3.mb-3 Aizuwakamatsu's climate
+                p.mb-3.text-bold Photography is the result of combining several technical discoveries, relating to seeing an image and capturing the image.
+                a(href="./article-01.html")
+                  img(src="./images/blog/image-3.jpg" class="image" alt="image")
+            .col-12.col-lg-6.d-none.d-lg-block
+              .pl-lg-4.h-100
+                a(href="./article-01.html" class="image-link")
+                  .image-link__wrap
+                    figure(style="background-image:url(./images/blog/image-4.jpg);" class="image--figure")
+                  .image-link__title
+                    h5.animated-letters.animated-letters--lfb Go to article
+        //- Article
+        .col-xl-10.blog-article.mb-4(data-groups='["app"]')
+          .row
+            .col-12.col-lg-6
+              .pr-lg-4
+                span.sup-title.mb-3 design
+                h3.mb-3 Resembles that of the Hokuriku
+                p.mb-3.text-bold Photography is the result of combining several technical discoveries, relating to seeing an image and capturing the image.
+                a(href="./article-01.html")
+                  img(src="./images/blog/image-5.jpg" class="image" alt="image")
+            .col-12.col-lg-6.d-none.d-lg-block
+              .pl-lg-4.h-100
+                a(href="./article-01.html" class="image-link")
+                  .image-link__wrap
+                    figure(style="background-image:url(./images/blog/image-6.jpg);" class="image--figure")
+                  .image-link__title
+                    h5.animated-letters.animated-letters--lfb Go to article
 
-	include ./modules/top-arrow
-	include ./sections/footer.pug
+  include ./modules/top-arrow
+  include ./sections/footer.pug

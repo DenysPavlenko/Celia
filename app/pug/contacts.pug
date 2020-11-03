@@ -1,58 +1,58 @@
 extends layouts/main
 
 block variables
-	- var title = 'Contacts'
+  - var title = 'Contacts'
 
 block content
 
-	//- Page name
-	.page-name.pt-xl-160.pb-4
-		.container
-			.row.justify-content-center.align-items-center
-				.col-6.col-xl-5
-					span.page-name__title.text-muted Contacts
-				.col-6.col-xl-5
-					.page-name__line
+  //- Page name
+  .page-name.pt-xl-160.pb-4
+    .container
+      .row.justify-content-center.align-items-center
+        .col-6.col-xl-5
+          span.page-name__title.text-muted Contacts
+        .col-6.col-xl-5
+          .page-name__line
 
-	.contacts.image-half.image-half--right.mb-5
-		.image-half__wrapper.mb-4.mb-xl-0.animated-image(data-scroll-animation="revealIn")
-			.map
-				#map
-		.container
-			.row
-				.col-12.col-xl-5.offset-xl-1
-					.contacts-wrapper
-						.contacts-info
-							h2.pt-3.mb-5 Trandy Shania st. 21 55555 Carmenito Stylish Porto, Portugal
+  .contacts.image-half.image-half--right.mb-5
+    .image-half__wrapper.mb-4.mb-xl-0.animated-image(data-scroll-animation="revealIn")
+      .map
+        #map
+    .container
+      .row
+        .col-12.col-xl-5.offset-xl-1
+          .contacts-wrapper
+            .contacts-info
+              h2.pt-3.mb-5 Trandy Shania st. 21 55555 Carmenito Stylish Porto, Portugal
 
-							.social-icons.mb-5
-								a(href="http://twitter.com").social-icon
-									i(class="fa fa-twitter")
-								a(href="http://facebook.com").social-icon
-									i(class="fa fa-facebook")
-								a(href="http://linkedin.com").social-icon
-									i(class="fa fa-linkedin")
-								a(href="http://instagram.com").social-icon
-									i(class="fa fa-instagram")
+              .social-icons.mb-5
+                a(href="http://twitter.com").social-icon
+                  i(class="fa fa-twitter")
+                a(href="http://facebook.com").social-icon
+                  i(class="fa fa-facebook")
+                a(href="http://linkedin.com").social-icon
+                  i(class="fa fa-linkedin")
+                a(href="http://instagram.com").social-icon
+                  i(class="fa fa-instagram")
 
-							.d-flex.align-items-center.mb-4
-								img(src="./images/common/phone-icon.png", class="pr-2" alt="icon")
-								a(href="tel:+382365456987").h3.text-regular.link-hover +38 2365456987
-							.d-flex.align-items-center.mb-5
-								img(src="./images/common/email-icon.png", class="pr-2" alt="icon")
-								a(href="mailto:hallo@celia.com").h3.text-regular.link-hover hallo@celia.com
+              .d-flex.align-items-center.mb-4
+                img(src="./images/common/phone-icon.png", class="pr-2" alt="icon")
+                a(href="tel:+382365456987").h3.text-regular.link-hover +38 2365456987
+              .d-flex.align-items-center.mb-5
+                img(src="./images/common/email-icon.png", class="pr-2" alt="icon")
+                a(href="mailto:hallo@celia.com").h3.text-regular.link-hover hallo@celia.com
 
-							button.button.contacts__button.mb-5 Some questions?
+              button.button.contacts__button.mb-5 Some questions?
 
-						//- Contacts popup
-						.contacts-popup
-							.contacts-popup__close
-								span
-							form.contacts-popup__form.d-flex.flex-column.align-items-start.mt-4
-								label Name
-								input(type="text" class="input contacts-popup__input mt-2 mb-5" value="")
-								label Email
-								input(type="email" class="input contacts-popup__input mt-2 mb-5" value="")
-								label Question
-								input(type="text" class="input contacts-popup__input mt-2 mb-5" value="")
-								button(type="submit").button.contacts-popup__send Send
+            //- Contacts popup
+            .contacts-popup
+              .contacts-popup__close
+                span
+              form.contacts-popup__form.d-flex.flex-column.align-items-start.mt-4
+                label Name
+                input(type="text" class="input contacts-popup__input mt-2 mb-5" value="")
+                label Email
+                input(type="email" class="input contacts-popup__input mt-2 mb-5" value="")
+                label Question
+                input(type="text" class="input contacts-popup__input mt-2 mb-5" value="")
+                button(type="submit").button.contacts-popup__send Send

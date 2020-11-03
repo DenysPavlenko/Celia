@@ -1,41 +1,41 @@
 /* Top arrow */
 .top-arrow
-	position: fixed
-	bottom: 35px
-	right: 35px
-	cursor: pointer
-	opacity: 0
-	transition: 0.2s $timing-function
-	z-index: 200
-	transform: translateY(10px)
-	pointer-events: none
-	&--is-active
-		transform: translateY(0)
-		bottom: 35px
-		opacity: 1
-		pointer-events: auto
-	&:hover
-		.top-arrow__icon
-			transform: scale(0.9)
-	&__icon
-		transition: 0.2s $timing-function
-		width: 28px
-		height: 28px
-		svg
-			width: 28px
-			fill: $dark-color
-	&--is-light
-		.top-arrow__icon
-			svg
-				fill: $light-color
+  position: fixed
+  bottom: 35px
+  right: 35px
+  cursor: pointer
+  opacity: 0
+  transition: 0.2s $timing-function
+  z-index: 200
+  transform: translateY(10px)
+  pointer-events: none
+  &--is-active
+    transform: translateY(0)
+    bottom: 35px
+    opacity: 1
+    pointer-events: auto
+  &:hover
+    .top-arrow__icon
+      transform: scale(0.9)
+  &__icon
+    transition: 0.2s $timing-function
+    width: 28px
+    height: 28px
+    svg
+      width: 28px
+      fill: $dark-color
+  &--is-light
+    .top-arrow__icon
+      svg
+        fill: $light-color
 
 +media-max($breakpoint-xl)
-	/* Top arrow */
-	.top-arrow
-		bottom: 15px
-		right: 15px
+  /* Top arrow */
+  .top-arrow
+    bottom: 15px
+    right: 15px
 
 +media-max($breakpoint-lg)
-	/* Top arrow */
-	.top-arrow
-		display: none
+  /* Top arrow */
+  .top-arrow
+    display: none
