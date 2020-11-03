@@ -5,6 +5,7 @@ global.BUILD_PATHS = {
   root: './build',
   templates: {
     entry: './app/pug/*.pug',
+    basedir: './app/pug',
     src: './app/pug/**/*.pug',
     dest: './build/',
   },

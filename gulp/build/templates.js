@@ -6,7 +6,10 @@ const inject = require('gulp-inject-string');
 
 const templates = () => {
   return src(BUILD_PATHS.templates.entry)
-    .pipe(pug({ pretty: true }))
+    .pipe(pug({
+      pretty: true,
+      basedir: DEV_PATHS.templates.basedir
+    }))
     // Inject concatenated styles link
     .pipe(replace(/<link.*href=["|\']?(.*[\\\|\/]?.*)\.css["|\']?.*/g, ''))
     .pipe(inject.before(`</head>`, `\n<link rel="stylesheet" type="text/css" href="./styles/main.css">`))
