@@ -17,7 +17,7 @@ export default function () {
     easingcss3: TIMING_FUNCTION,
     continuousVertical: true,
     responsiveWidth: MOBILE_SCREEN_START,
-    responsiveHeight: 520,
+    responsiveHeight: 600,
 
     // Trigger on the page render
     afterRender: function () {
